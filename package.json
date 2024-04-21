@@ -8,11 +8,25 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "simple-git-hooks",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "nuxt": "^3.11.2",
     "vue": "^3.4.23",
     "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "simple-git-hooks": "^2.11.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown"
   }
 }

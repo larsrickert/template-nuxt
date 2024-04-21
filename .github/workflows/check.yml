@@ -20,6 +20,9 @@ jobs:
       - name: 📦 Install dependencies
         run: pnpm install
 
+      - name: 🔍 Run eslint
+        run: pnpm lint
+
       - name: 🔍 Check formatting
         run: pnpm format:check
 

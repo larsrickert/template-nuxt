@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/i18n"],
+  css: ["~/assets/css/main.scss"],
   i18n: {
     lazy: true,
     langDir: "lang",

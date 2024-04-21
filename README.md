@@ -1,6 +1,18 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 Template
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Build upon the official [Nuxt 3 starter application](https://nuxt.com/docs/getting-started/introduction).
+
+Additional features:
+
+- [nuxt i18n](https://nuxt.com/modules/i18n)
+- [eslint](https://nuxt.com/modules/eslint) and [prettier](https://prettier.io/) setup (also runs pre-commit)
+- [Docker](https://www.docker.com) setup
+- GitHub action to check and build code in CI
+
+## Prerequisites
+
+- [Node.js](https://nodejs.org/en) version as specified in [.node-version](./.node-version) file
+- [pnpm](https://pnpm.io/) version as specified in [`package.json`](./package.json) field `packageManager`
 
 ## Setup
 

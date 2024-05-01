@@ -6,6 +6,7 @@ Additional features:
 
 - [nuxt i18n](https://nuxt.com/modules/i18n)
 - [eslint](https://nuxt.com/modules/eslint) and [prettier](https://prettier.io/) setup (also runs pre-commit)
+- [Playwright](https://playwright.dev) for testing
 - [Docker](https://www.docker.com) setup
 - GitHub action to check and build code in CI
 

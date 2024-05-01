@@ -8,9 +8,10 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "test": "vitest",
     "test:playwright": "playwright install && playwright test",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint:fix": "pnpm run lint --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "simple-git-hooks",
@@ -26,11 +27,14 @@
     "@nuxt/eslint": "~0.3.10",
     "@nuxt/test-utils": "^3.12.1",
     "@playwright/test": "~1.43.1",
+    "@vue/test-utils": "^2.4.5",
     "eslint-plugin-playwright": "^1.6.0",
+    "happy-dom": "^14.7.1",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "sass": "^1.76.0",
-    "simple-git-hooks": "^2.11.1"
+    "simple-git-hooks": "^2.11.1",
+    "vitest": "^1.5.3"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"

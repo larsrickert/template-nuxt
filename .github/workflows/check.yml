@@ -34,7 +34,7 @@ jobs:
 
   # run Playwright tests in parallel job to speed up workflow speed
   playwright:
-    name: Run tests
+    name: Run Playwright tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

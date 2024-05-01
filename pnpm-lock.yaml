@@ -30,6 +30,9 @@ importers:
       '@playwright/test':
         specifier: ~1.43.1
         version: 1.43.1
+      eslint-plugin-playwright:
+        specifier: ^1.6.0
+        version: 1.6.0(eslint@8.57.0)
       lint-staged:
         specifier: ^15.2.2
         version: 15.2.2
@@ -2079,6 +2082,16 @@ packages:
     engines: {node: '>=18'}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
+
+  eslint-plugin-playwright@1.6.0:
+    resolution: {integrity: sha512-tI1E/EDbHT4Fx5KvukUG3RTIT0gk44gvTP8bNwxLCFsUXVM98ZJG5zWU6Om5JOzH9FrmN4AhMu/UKyEsu0ZoDA==}
+    engines: {node: '>=16.6.0'}
+    peerDependencies:
+      eslint: '>=8.40.0'
+      eslint-plugin-jest: '>=25'
+    peerDependenciesMeta:
+      eslint-plugin-jest:
+        optional: true
 
   eslint-plugin-unicorn@52.0.0:
     resolution: {integrity: sha512-1Yzm7/m+0R4djH0tjDjfVei/ju2w3AzUGjG6q8JnuNIL5xIwsflyCooW5sfBvQp2pMYQFSWWCFONsjCax1EHng==}
@@ -6938,6 +6951,11 @@ snapshots:
       spdx-expression-parse: 4.0.0
     transitivePeerDependencies:
       - supports-color
+
+  eslint-plugin-playwright@1.6.0(eslint@8.57.0):
+    dependencies:
+      eslint: 8.57.0
+      globals: 13.24.0
 
   eslint-plugin-unicorn@52.0.0(eslint@8.57.0):
     dependencies:

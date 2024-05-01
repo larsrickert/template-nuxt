@@ -32,8 +32,8 @@ jobs:
       - name: 🛠️ Generate static site
         run: pnpm generate
 
-  # run tests in parallel job to speed up workflow speed
-  tests:
+  # run Playwright tests in parallel job to speed up workflow speed
+  playwright:
     name: Run tests
     runs-on: ubuntu-latest
     steps:

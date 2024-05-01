@@ -31,3 +31,28 @@ jobs:
 
       - name: 🛠️ Generate static site
         run: pnpm generate
+
+  # run tests in parallel job to speed up workflow speed
+  tests:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          cache: pnpm
+
+      - name: 📦 Install dependencies
+        run: pnpm install
+
+      # install system dependencies for Playwright
+      # see: https://playwright.dev/python/docs/browsers#install-system-dependencies
+      - name: 📦 Install Playwright system dependencies
+        run: pnpm exec playwright install-deps
+
+      - name: 🧪 Run tests
+        run: pnpm test:playwright

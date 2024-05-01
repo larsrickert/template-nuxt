@@ -8,7 +8,7 @@ import { fileURLToPath } from "node:url";
  * @see https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig<ConfigOptions>({
-  testDir: "./tests",
+  testDir: "./tests/playwright",
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   reporter: [["html", { open: "never" }]],

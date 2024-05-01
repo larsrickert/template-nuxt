@@ -6,6 +6,6 @@ export default withNuxt([
   // Your custom configs here
   {
     ...playwright.configs["flat/recommended"],
-    files: ["tests/**"],
+    files: ["tests/playwright/**"],
   },
 ]);

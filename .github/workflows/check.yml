@@ -32,6 +32,9 @@ jobs:
       - name: 🛠️ Generate static site
         run: pnpm generate
 
+      - name: 🧪 Run unit tests
+        run: pnpm test
+
   # run Playwright tests in parallel job to speed up workflow speed
   playwright:
     name: Run Playwright tests
@@ -54,7 +57,7 @@ jobs:
       - name: 📦 Install Playwright system dependencies
         run: pnpm exec playwright install-deps
 
-      - name: 🧪 Run tests
+      - name: 🧪 Run Playwright tests
         run: pnpm test:playwright
 
       # upload report if tests failed for debugging

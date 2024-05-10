@@ -17,6 +17,16 @@ export default defineConfig<ConfigOptions>({
     video: process.env.CI ? "retain-on-failure" : "off",
     nuxt: {
       rootDir: fileURLToPath(new URL(".", import.meta.url)),
+      // configure Nuxt to re-use already build application to speed up tests.
+      build: false,
+      buildDir: ".output",
+      nuxtConfig: {
+        nitro: {
+          output: {
+            dir: ".output",
+          },
+        },
+      },
     },
   },
   projects: [

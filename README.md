@@ -58,6 +58,7 @@ pnpm run test
 Run component/integration/e2e tests using [Playwright](https://playwright.dev):
 
 ```bash
+pnpm run build
 pnpm run test:playwright
 ```
 

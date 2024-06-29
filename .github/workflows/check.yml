@@ -49,7 +49,3 @@ jobs:
           path: |
             playwright-report/
             test-results/
-
-      # generate must be run after Playwright tests
-      - name: 🛠️ Generate static site
-        run: pnpm generate

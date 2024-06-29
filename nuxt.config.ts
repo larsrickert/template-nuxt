@@ -9,4 +9,10 @@ export default defineNuxtConfig({
     defaultLocale: "en",
     locales: [{ code: "en", file: "en-US.json" }],
   },
+  nitro: {
+    compressPublicAssets: true,
+    prerender: {
+      crawlLinks: true,
+    },
+  },
 });

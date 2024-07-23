@@ -2,7 +2,7 @@
   "name": "template-nuxt",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "pnpm@9.6.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -19,20 +19,20 @@
   },
   "dependencies": {
     "@nuxtjs/i18n": "^8.3.1",
-    "nuxt": "^3.12.2",
-    "vue": "^3.4.31",
+    "nuxt": "^3.12.4",
+    "vue": "^3.4.33",
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
     "@nuxt/eslint": "~0.3.13",
     "@nuxt/test-utils": "^3.13.1",
-    "@playwright/test": "~1.45.0",
+    "@playwright/test": "~1.45.3",
     "@vue/test-utils": "^2.4.6",
     "eslint-plugin-playwright": "^1.6.2",
     "happy-dom": "^14.12.3",
     "lint-staged": "^15.2.7",
-    "prettier": "^3.3.2",
-    "sass": "^1.77.6",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
     "simple-git-hooks": "^2.11.1",
     "vitest": "^1.6.0"
   },

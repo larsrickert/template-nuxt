@@ -1,5 +1,5 @@
 # build stage
-FROM node:20-alpine as build
+FROM node:22-alpine AS build
 WORKDIR /app
 
 COPY pnpm-lock.yaml package.json ./
@@ -13,7 +13,7 @@ RUN pnpm install --frozen-lockfile
 RUN pnpm build
 
 # production stage
-FROM node:20-alpine
+FROM node:22-alpine
 WORKDIR /app
 
 COPY --from=build /app/.output /app/.output

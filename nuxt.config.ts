@@ -9,6 +9,10 @@ export default defineNuxtConfig({
     lazy: true,
     defaultLocale: "en-US",
     locales: [{ code: "en-US", file: "en-US.json" }],
+    bundle: {
+      // see: https://github.com/nuxt-modules/i18n/issues/3238#issuecomment-2672492536
+      optimizeTranslationDirective: false,
+    },
   },
   nitro: {
     compressPublicAssets: true,

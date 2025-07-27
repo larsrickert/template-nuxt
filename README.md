@@ -6,7 +6,6 @@ Additional features:
 
 - [nuxt i18n](https://nuxt.com/modules/i18n)
 - [eslint](https://nuxt.com/modules/eslint) and [prettier](https://prettier.io/) setup (also runs pre-commit)
-- Testing using [Vitest](https://vitest.dev) and [Playwright](https://playwright.dev)
 - [Docker](https://www.docker.com) setup
 - GitHub action to check and build code in CI
 
@@ -43,23 +42,6 @@ Locally preview production build:
 
 ```bash
 pnpm run preview
-```
-
-## Unit tests
-
-Run unit tests using [Vitest](https://vitest.dev):
-
-```bash
-pnpm run test
-```
-
-## Playwright tests
-
-Run component/integration/e2e tests using [Playwright](https://playwright.dev):
-
-```bash
-pnpm run build
-pnpm run test:playwright
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

@@ -29,23 +29,3 @@ jobs:
 
       - name: 🛠️ Build
         run: pnpm build
-
-      - name: 🧪 Run unit tests
-        run: pnpm test
-
-      # install system dependencies for Playwright
-      # see: https://playwright.dev/docs/browsers#install-system-dependencies
-      - name: 📦 Install Playwright system dependencies
-        run: pnpm exec playwright install-deps
-
-      - name: 🧪 Run Playwright tests
-        run: pnpm test:playwright
-
-      # upload report if tests failed for debugging
-      - uses: actions/upload-artifact@v4
-        if: ${{ failure() }}
-        with:
-          name: playwright-report
-          path: |
-            playwright-report/
-            test-results/

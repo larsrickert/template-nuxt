@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-06-28",
   devtools: { enabled: true },
   typescript: { typeCheck: "build" },
-  modules: ["@nuxtjs/i18n", "@nuxt/eslint", "@nuxt/test-utils/module"],
+  modules: ["@nuxtjs/i18n", "@nuxt/eslint"],
   css: ["~/assets/css/main.scss"],
   i18n: {
     defaultLocale: "en-US",

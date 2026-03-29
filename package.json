@@ -2,7 +2,7 @@
   "name": "template-nuxt",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@10.17.1",
+  "packageManager": "pnpm@10.33.0",
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
@@ -15,20 +15,20 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "^10.1.0",
-    "nuxt": "^4.1.2",
-    "vue": "^3.5.22",
-    "vue-router": "^4.5.1"
+    "@nuxtjs/i18n": "^10.2.4",
+    "nuxt": "^4.4.2",
+    "vue": "^3.5.31",
+    "vue-router": "^5.0.4"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^1.9.0",
-    "eslint": "^9.36.0",
-    "lint-staged": "^16.2.3",
-    "prettier": "^3.6.2",
-    "sass-embedded": "^1.93.2",
+    "@nuxt/eslint": "^1.15.2",
+    "eslint": "^10.1.0",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.8.1",
+    "sass-embedded": "^1.98.0",
     "simple-git-hooks": "^2.13.1",
     "typescript": "~5.9.3",
-    "vue-tsc": "^3.1.0"
+    "vue-tsc": "^3.2.6"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"

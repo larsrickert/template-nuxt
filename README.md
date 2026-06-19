@@ -1,25 +1,23 @@
-# Nuxt 3 Template
+# Nuxt Minimal Starter
 
-Build upon the official [Nuxt 3 starter application](https://nuxt.com/docs/getting-started/introduction).
-
-Additional features:
-
-- [nuxt i18n](https://nuxt.com/modules/i18n)
-- [eslint](https://nuxt.com/modules/eslint) and [prettier](https://prettier.io/) setup (also runs pre-commit)
-- [Docker](https://www.docker.com) setup
-- GitHub action to check and build code in CI
-
-## Prerequisites
-
-- [Node.js](https://nodejs.org/en) version as specified in [.node-version](./.node-version) file
-- [pnpm](https://pnpm.io/) version as specified in [`package.json`](./package.json) field `packageManager`
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
 
-Make sure to install the dependencies:
+Make sure to install dependencies:
 
 ```bash
+# npm
+npm install
+
+# pnpm
 pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
 ```
 
 ## Development Server
@@ -27,7 +25,17 @@ pnpm install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-pnpm run dev
+# npm
+npm run dev
+
+# pnpm
+pnpm dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
 ```
 
 ## Production
@@ -35,13 +43,33 @@ pnpm run dev
 Build the application for production:
 
 ```bash
-pnpm run build
+# npm
+npm run build
+
+# pnpm
+pnpm build
+
+# yarn
+yarn build
+
+# bun
+bun run build
 ```
 
 Locally preview production build:
 
 ```bash
-pnpm run preview
+# npm
+npm run preview
+
+# pnpm
+pnpm preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

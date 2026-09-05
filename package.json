@@ -14,21 +14,21 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "^10.4.0",
-    "nuxt": "^4.4.8",
-    "vue": "^3.5.38",
-    "vue-router": "^5.1.0"
+    "@nuxtjs/i18n": "^10.6.0",
+    "nuxt": "^4.5.2",
+    "vue": "^3.5.42",
+    "vue-router": "^5.3.1"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^1.16.0",
-    "eslint": "^10.5.0",
-    "lint-staged": "^17.0.7",
-    "oxfmt": "~0.55.0",
-    "sass-embedded": "^1.100.0",
-    "simple-git-hooks": "^2.13.1",
+    "@nuxt/eslint": "^1.17.0",
+    "eslint": "^10.10.0",
+    "lint-staged": "^17.4.1",
+    "oxfmt": "^0.66.0",
+    "sass-embedded": "^1.104.0",
+    "simple-git-hooks": "^2.14.0",
     "typescript": "~6.0.3",
-    "vite": "catalog:",
-    "vue-tsc": "^3.3.5"
+    "vite": "^8.2.2",
+    "vue-tsc": "^3.3.11"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
@@ -39,5 +39,5 @@
       "oxfmt --no-error-on-unmatched-pattern"
     ]
   },
-  "packageManager": "pnpm@11.8.0"
+  "packageManager": "pnpm@12.3.4+sha512.961aa41fb077da3a04a441d9f8e15ebc0c96da8ef710b2eb67bf9ee7cb0610eabd48f1fd85f51cffe73846785fa0f87c56a3a872a1d893f8446741b5cce45457"
 }

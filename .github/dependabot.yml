@@ -1,0 +1,29 @@
+version: 2
+
+updates:
+  # npm
+  - package-ecosystem: npm
+    directory: /
+    versioning-strategy: increase
+    schedule:
+      interval: weekly
+      day: sunday
+    cooldown:
+      default-days: 1
+    groups:
+      minor:
+        update-types: [patch, minor]
+      major:
+        update-types: [major]
+
+  # GitHub Actions
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: sunday
+    cooldown:
+      default-days: 1
+    groups:
+      github-actions:
+        patterns: ["*"]
